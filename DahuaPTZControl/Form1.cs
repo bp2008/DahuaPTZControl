@@ -80,5 +80,10 @@ namespace DahuaPTZControl
 			values.Add(new Symmetric("DahuaPTZControlConfig").Encrypt(txtBIPassword.Text));
 			File.WriteAllText("DahuaPTZControlConfig.cfg", string.Join(Environment.NewLine, values));
 		}
+
+		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			System.Diagnostics.Process.Start(linkLabel1.Text);
+		}
 	}
 }
