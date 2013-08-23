@@ -459,6 +459,7 @@
 			this.linkLabel1.TabStop = true;
 			this.linkLabel1.Text = "http://dahuaptzforblueiris.codeplex.com/";
 			this.toolTip1.SetToolTip(this.linkLabel1, "Click here to load the project page on CodePlex.");
+			this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
 			// 
 			// toolTip1
 			// 
