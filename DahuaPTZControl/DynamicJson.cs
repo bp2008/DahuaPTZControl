@@ -11,6 +11,11 @@ namespace DahuaPTZControl
 {
 	public class JSON
 	{
+		/// <summary>
+		/// Creates a dynamic object by deserializing the specified JSON string.
+		/// </summary>
+		/// <param name="json">The JSON string to deserialize.</param>
+		/// <returns></returns>
 		public static dynamic ParseJson(string json)
 		{
 			var jss = new JavaScriptSerializer();
